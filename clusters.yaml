@@ -1,0 +1,7 @@
+- alias: hasura
+  config:
+    configmap: controller-conf
+    namespace: demure48-hasura
+  data: null
+  kubeContext: demure48
+  name: demure48
