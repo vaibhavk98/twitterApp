@@ -7,9 +7,9 @@ import leaf from 'react-native-vector-icons';
 
 export default class FABExample extends Component {
 
-  constructor() {
+  constructor(props) {
 
-    super();
+    super(props);
 
     this.state = {
 
@@ -17,7 +17,6 @@ export default class FABExample extends Component {
       inactive: 'true'
 
     };
-
   }
 
   render() {
@@ -46,19 +45,19 @@ export default class FABExample extends Component {
 
             <Icon name="ios-create" />
 
-            <Button style={{ backgroundColor: '#34A34F' }}>
+            <Button style={{ backgroundColor: '#34A34F' }} source={{uri: 'https://www.whatsapp.com/'}}>
 
               <Icon name="logo-whatsapp" />
 
             </Button>
 
-            <Button style={{ backgroundColor: '#3B5998' }}>
+            <Button style={{ backgroundColor: '#3B5998' }} souce={{uri: 'https://en-gb.facebook.com/'}}>
 
               <Icon name="logo-facebook" />
 
             </Button>
 
-            <Button disabled style={{ backgroundColor: '#DD5144' }}>
+            <Button style={{ backgroundColor: '#DD5144' }} source={{uri: 'https://accounts.google.com/SignUp?hl=en-GB'}}>
 
               <Icon name="mail" />
 
