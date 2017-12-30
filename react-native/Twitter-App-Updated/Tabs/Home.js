@@ -1,15 +1,15 @@
 
 import React, { Component } from 'react';
 
-import { StyleSheet, ScrollView, Image, TouchableOpacity } from 'react-native';
+import { StyleSheet, ScrollView, Image, TouchableOpacity, TouchableHighlight } from 'react-native';
 
 import { navigation, navigate, } from 'react-navigation';
 
-import { Container, Navigator, Content, Footer, FooterTab, Text, Header, Item, HeaderTab, View, Title, Button, Left, Right, Tab, Tabs, TabHeading, Icon } from 'native-base';
+import { Container, Navigator, Content, uri, props, Footer, FooterTab, Text, Header, Item, HeaderTab, View, Title, Button, Left, Right, Tab, Tabs, TabHeading, Icon } from 'native-base';
 
 import { Font }  from 'react-native-vector-icons';
 
-import Expo from 'expo';
+import { Asset, AppLoading, registerRootComponent, Expo } from 'expo';
 
 import Tab1 from './HomeTabs/tabOne';
 
@@ -40,11 +40,17 @@ export default class AdvancedTabsExample extends Component {
       </TouchableOpacity>
       </Left>
       <Left>
-      <Text style={{fontSize:25, marginLeft:-100, marginTop:10, marginBottom:6.5}}>Home</Text>
+      <Text style={{fontSize:25, marginLeft:-100, marginTop:10, marginBottom:6.5, color:"#3F51B5"}}>      Twitter</Text>
       </Left>
-        <Icon name="logo-twitter" style={{color:"#2196F3"}} source={{uri: 'https://twitter.com/?lang=en-in'}} />
+      <Left>
+        <TouchableOpacity><TouchableHighlight><Button transparent style={{marginTop:10, marginBottom:5.5}}>
+        <Icon name="logo-twitter" style={{color:"#2196F3", marginLeft:75}} onPress={ () => this.props.navigation.navigate({uri : "https://twitter.com/"}) }/>
+        </Button>
+        </TouchableHighlight>
+        </TouchableOpacity>
+        </Left>
       </Item>
-        <Tabs style={{marginTop:-5}}>
+        <Tabs style={{marginTop:-5}} indicatorStyle={{backgroundColor:"#2196F3"}} >
           <Tab heading={ <TabHeading style={styles.footer}><Icon name="ios-home" style={styles.ficon}/></TabHeading>}>
           <Tab1/>        
           </Tab>
@@ -94,3 +100,11 @@ const styles= StyleSheet.create(
   },
   }
 );
+
+const tabBarOptions = {
+  tabBarOptions:{
+    indicatorStyle: {
+      backgroundColor: "#2196F3",
+  },
+  }
+}
