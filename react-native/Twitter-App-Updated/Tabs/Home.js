@@ -25,6 +25,8 @@ import CardImageExample from './HomeTabs/tabOne';
 
 import SplashTwitter from './HomeTabs/SplashPage/SplashScreen';
 
+import App from '../App'
+
 export default class AdvancedTabsExample extends Component {
 
   render() {
@@ -33,10 +35,11 @@ export default class AdvancedTabsExample extends Component {
 
     <Container style={{backgroundColor:"#3F51B5"}}>
       <Header style={{marginBottom:-35}} hasTabs/>
+      <App/>
       <Item style={{backgroundColor:"white"}}>
         <Left>
           <TouchableOpacity>
-      <Button transparent style={{marginTop:10, marginBottom:5.5}}><Icon name="ios-menu" style={{color:"#3F51B5"}} onPress={() => this.props.navigation.navigate('DrawerToggle')} /></Button>
+      <Button transparent style={{marginLeft:3 , marginTop:10, marginBottom:5.5}}><Icon name="ios-menu" style={{color:"#3F51B5"}} onPress={() => this.props.navigation.navigate('DrawerToggle')} /></Button>
       </TouchableOpacity>
       </Left>
       <Left>
