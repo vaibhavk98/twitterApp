@@ -6,7 +6,7 @@
     "slug": "TwitterClone",
     "sdkVersion": "23.0.0",
     "android": {
-      "package": "com.@vaibhavk98.TwitterClone"
+      "package": "vaibhavk98.TwitterClone"
     }
   }
 }
