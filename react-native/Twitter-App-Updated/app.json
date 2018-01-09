@@ -3,13 +3,7 @@
     "name": "TwitterClone",
     "icon": "./Twitter-icon.png",
     "version": "1.0.0",
-    "slug": "https://github.com/vaibhavk98/twitterApp.git",
-    "sdkVersion": "23.0.0",
-    "ios": {
-      "bundleIdentifier": "com.fakeTwitter.twitterClone"
-    },
-    "android": {
-      "package": "com.fakeTwitter.twitterClone"
-    }
+    "slug": "expo.io/@vaibhavk98/twitterClone",
+    "sdkVersion": "23.0.0"
   }
 }
