@@ -25,8 +25,6 @@ import CardImageExample from './HomeTabs/tabOne';
 
 import SplashTwitter from './HomeTabs/SplashPage/SplashScreen';
 
-import App from '../App'
-
 export default class AdvancedTabsExample extends Component {
 
   render() {
@@ -35,7 +33,6 @@ export default class AdvancedTabsExample extends Component {
 
     <Container style={{backgroundColor:"#3F51B5"}}>
       <Header style={{marginBottom:-35}} hasTabs/>
-      <App/>
       <Item style={{backgroundColor:"white"}}>
         <Left>
           <TouchableOpacity>
@@ -43,7 +40,7 @@ export default class AdvancedTabsExample extends Component {
       </TouchableOpacity>
       </Left>
       <Left>
-      <Text style={{fontSize:25, marginLeft:-100, marginTop:10, marginBottom:6.5, color:"#3F51B5"}}>      Twitter</Text>
+      <Text style={{fontSize:25, marginLeft:-87, marginTop:10, marginBottom:6.5, color:"#3F51B5"}}>      Twitter</Text>
       </Left>
       <Left>
         <TouchableOpacity><TouchableHighlight><Button transparent style={{marginTop:10, marginBottom:5.5}}>
@@ -67,7 +64,7 @@ export default class AdvancedTabsExample extends Component {
           <Tab4/>
           </Tab>
         </Tabs>
-        <Footer>
+        <Footer transparent>
           <FooterTab style={styles.footer}>
           <Left>
             <Button transparent>

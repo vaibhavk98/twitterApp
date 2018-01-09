@@ -5,10 +5,10 @@ import { StyleSheet, View, Image, ScrollView } from 'react-native';
 export default class SideBar extends Component {
         constructor(props) {    
            super(props);   
-            this.state = {    
-                shadowColor: "white",
+            this.state = { 
+                shadowOffsetColor: "white",
                 shadowOffsetWidth: 0.8, 
-                shadowRadius: 1,    
+                shadowRadius: 2,    
             };   
         }
         render(){
