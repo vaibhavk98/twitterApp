@@ -1,9 +1,9 @@
 {
   "expo": {
-    "name": "Twitter-App-Updated",
+    "name": "TwitterClone",
     "icon": "logo-twitter",
     "version": "0.1.0",
-    "slug": "Twitter-App-Updated",
+    "slug": "TwitterClone",
     "sdkVersion": "23.0.0"
   }
 }
