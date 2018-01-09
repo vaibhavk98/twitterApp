@@ -3,7 +3,7 @@
     "name": "TwitterClone",
     "icon": "./Twitter-icon.png",
     "version": "1.0.0",
-    "slug": "expo.io/@vaibhavk98/TwitterClone",
+    "slug": "TwitterClone",
     "sdkVersion": "23.0.0"
   }
 }
